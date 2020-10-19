@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
@@ -17,11 +18,19 @@ class Navbar extends Component {
     return (
       <nav className={this.state.showNav ? "show" : ""}>
         <ul className={this.state.showNav ? `show nav-links` : `nav-links`}>
-          <li className="nav-link">Live Consultation</li>
-          <li className="nav-link">Buy Plans</li>
-          <li className="nav-link">View Plans</li>
           <li className="nav-link">
-            <button className="login-btn">Log In</button>
+            <Link to="/consultation">Live Consultation</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="buy">Buy Plans</Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/plans">View Plans</Link>
+          </li>
+          <li className="nav-link">
+            <button className="login-btn">
+              <Link to="/login">Log In</Link>
+            </button>
           </li>
         </ul>
 

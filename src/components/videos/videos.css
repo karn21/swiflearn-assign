@@ -10,6 +10,7 @@ section.videos-section {
 
 .arrow {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .video-carousel {
@@ -42,8 +43,6 @@ section.videos-section {
 .video-current {
   height: 16rem;
   width: 20rem;
-  /* height: 18rem; */
-  /* width: 23rem; */
   border: 1px solid rgb(129, 125, 125);
   border-radius: 1rem;
 }
