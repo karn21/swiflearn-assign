@@ -7,10 +7,21 @@
 body {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
-  color: #807a7a;
+  color: #908a8a;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  padding: 2rem 6rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.3rem;
+  padding: 1rem 0;
 }
