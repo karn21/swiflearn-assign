@@ -1,0 +1,39 @@
+nav {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 4px rgb(175, 170, 170);
+  float: left;
+}
+
+ul.nav-links {
+  list-style-type: none;
+}
+
+.nav-links {
+  display: flex;
+  padding: 1.5rem;
+  float: right;
+  align-items: baseline;
+}
+
+.nav-link {
+  padding: 0 2rem;
+}
+
+.login-btn {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: rgb(246, 101, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 101, 18, 0.8610499619769783) 23%,
+    rgba(252, 69, 169, 0.9030667686996674) 100%
+  );
+  box-shadow: 0px 0px 5px rgba(252, 69, 169, 0.9030667686996674);
+}
