@@ -1,24 +1,41 @@
-import React, { Component } from "react";
+import React from "react";
 import Title from "../sectionTitle/Title";
 import "./classComp.css";
+import { cl } from "../../CourseData";
 
-class ClassComponent extends Component {
-  render() {
-    return (
-      <section>
-        <Title title="Live Classes"></Title>
-        <div className="class-list">
-          <ul className="list">
-            <li className="cl active">3</li>
-            <li className="cl">4</li>
-            <li className="cl">5</li>
-            <li className="cl">6</li>
-            <li className="cl">7</li>
-          </ul>
-        </div>
-      </section>
-    );
-  }
+function ClassComponent(props) {
+  return (
+    <section>
+      <Title title="Live Classes"></Title>
+      <div className="class-list">
+        <ul className="list">
+          {cl.map((classNo) => {
+            if (classNo === props.currentClass) {
+              return (
+                <li
+                  className="cl active"
+                  key={classNo}
+                  onClick={() => props.changeClass(classNo)}
+                >
+                  {classNo}
+                </li>
+              );
+            } else {
+              return (
+                <li
+                  className="cl"
+                  key={classNo}
+                  onClick={() => props.changeClass(classNo)}
+                >
+                  {classNo}
+                </li>
+              );
+            }
+          })}
+        </ul>
+      </div>
+    </section>
+  );
 }
 
 export default ClassComponent;

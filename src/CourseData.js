@@ -50,3 +50,5 @@ export const data = [
     ],
   },
 ];
+
+export const cl = [5, 6, 7, 8, 9];
