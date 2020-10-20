@@ -9,6 +9,7 @@ nav {
   box-shadow: 1px 1px 4px rgb(175, 170, 170);
   float: left;
   background-color: #fff;
+  z-index: 99;
 }
 
 nav.show {

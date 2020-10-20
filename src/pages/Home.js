@@ -6,7 +6,6 @@ import { data } from "../CourseData";
 class Home extends Component {
   state = {
     currentClass: 5,
-    currentLecture: 0,
     lectures: [],
   };
 
@@ -25,32 +24,6 @@ class Home extends Component {
     });
   };
 
-  // get next lecture
-  nextLecture = () => {
-    var index = this.state.currentLecture;
-    if (index === this.state.lectures.length - 1) {
-      index = 0;
-    } else {
-      index += 1;
-    }
-    this.setState({
-      currentLecture: index,
-    });
-  };
-
-  // get previous lecture
-  prevLecture = () => {
-    var index = this.state.currentLecture;
-    if (index === 0) {
-      index = this.state.lectures.length - 1;
-    } else {
-      index -= 1;
-    }
-    this.setState({
-      currentLecture: index,
-    });
-  };
-
   // change current class
   changeCurrentClass = (cl) => {
     this.setState(
@@ -66,11 +39,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <Videos
-          currentLecture={this.state.lectures[this.state.currentLecture]}
-          nextLecture={this.nextLecture}
-          prevLecture={this.prevLecture}
-        ></Videos>
+        <Videos lectures={this.state.lectures}></Videos>
         <ClassComponent
           currentClass={this.state.currentClass}
           changeClass={this.changeCurrentClass}

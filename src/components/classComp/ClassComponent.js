@@ -13,7 +13,7 @@ function ClassComponent(props) {
             if (classNo === props.currentClass) {
               return (
                 <li
-                  className="cl active"
+                  className="cl active-class"
                   key={classNo}
                   onClick={() => props.changeClass(classNo)}
                 >
