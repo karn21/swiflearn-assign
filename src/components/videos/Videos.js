@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import Title from "../sectionTitle/Title";
 import "./videos.css";
 
 class Videos extends Component {
   render() {
     return (
       <section className="videos-section">
-        <h1>Concept Videos</h1>
-        <p>Select a number</p>
+        <Title title="Concept Videos"></Title>
         <div className="slide-show">
           <div className="arrow arrow-prev">
             <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
