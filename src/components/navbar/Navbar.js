@@ -35,7 +35,7 @@ class Navbar extends Component {
         </ul>
 
         <div className="menu" onClick={this.toggleNav}>
-          <i class="fa fa-bars" aria-hidden="true"></i> Menu
+          <i className="fa fa-bars" aria-hidden="true"></i> Menu
         </div>
       </nav>
     );
